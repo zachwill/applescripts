@@ -8,7 +8,7 @@ set Christmas to (current date)
 set month of Christmas to December
 set day of Christmas to 25
 
-repeat with year from 2008 to 2200
+repeat with year from year of Christmas to 2200
     set year of Christmas to year
     if weekday of Christmas is Sunday
         set end of sundays to year
