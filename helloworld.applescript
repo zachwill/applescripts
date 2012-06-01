@@ -1,8 +1,10 @@
 #!/usr/bin/osascript
 
--- Usage: osascript helloworld.scpt
+-- It's basically this simple.
+set greeting to "Hello, world!"
 
-tell application "System Events"
-    activate
-    display dialog "Hello, world!"
-end tell
+-- But it looks better with new lines.
+set greeting to linefeed & greeting & linefeed
+
+-- Automatic output to terminal.
+greeting
